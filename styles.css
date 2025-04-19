@@ -8,13 +8,13 @@ body {
   align-items: center;
   background-image: url(Recursos/fondo\ nav.jpg);
   background-position: top;
-  background-size: 1920px 1080px; /* Tamaño fijo grande */
-  background-attachment: fixed; /* Mantiene el fondo fijo */
-  background-repeat: no-repeat; /* Evita que se repita */
+  background-size: 1920px 1080px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   justify-content: space-between;
   border-bottom: 1px solid #e0e0e0;
-  min-height: 400px; /* Altura mínima */
-  width: 100%; /* Ancho completo */
+  min-height: 400px; 
+  width: 100%; 
 }
 
 .navbar__logo {
@@ -23,8 +23,8 @@ body {
   padding-left: 20px;
   position: relative;
   filter: 
-   drop-shadow(0 10px 20px rgb(255, 255, 255))
-   drop-shadow(0 5px 20px rgb(255, 255, 255));
+   drop-shadow(0 0px 10px rgb(255, 192, 203, 0.6))
+   drop-shadow(0 0px 20px rgb(255, 255, 255));
 }
 
 .navbar__links {
@@ -108,4 +108,44 @@ body {
   color: #400707;
   text-decoration: underline;
   transform: scale(0.9);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: fadeInUp 1s ease-out forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover img {
+  transform: scale(0.8);
 }
