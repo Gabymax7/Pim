@@ -73,18 +73,19 @@ body {
   box-shadow: #ffffff 0px 0px 10px 5px;
   text-decoration: none;
   font-style: normal;
+  flex-wrap: wrap;
 }
 
 .footer__1 a {
   color: #000000;
   text-decoration: none;
-  padding: 10px;
   transition: all 0.2s ease-in-out;
+  display: inline-block;
 }
 
 .footer__1 a:hover {
   color: #400707;
+  display: inline-block;
   text-decoration: underline;
   transform: scale(0.9);
-
 }
