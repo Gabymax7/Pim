@@ -5,14 +5,15 @@ body {
 .navbar {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  min-height: 400px;
+  height: auto;
   width: auto;
   align-items: center;
   background-image: url(Recursos/fondo\ nav.jpg);
   background-size: cover;
   background-position: top;
   background-size: 700px 700px;
-  padding: 0;
+  padding: 20px 0;
   justify-content: space-between;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -58,6 +59,22 @@ body {
   padding: 5px 10px;
   transform: scale(0.9);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    background-size: cover; /* Asegura que el fondo cubra todo */
+    height: auto; /* Altura automática */
+  }
+
+  .navbar__links {
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .article__1 {
