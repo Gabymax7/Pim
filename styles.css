@@ -5,18 +5,16 @@ body {
 .navbar {
   display: flex;
   flex-direction: column;
-  min-height: 400px;
-  height: auto;
-  width: auto;
   align-items: center;
   background-image: url(Recursos/fondo\ nav.jpg);
-  background-size: cover;
   background-position: top;
-  background-size: 700px 700px;
-  background-attachment: fixed;
-  padding: 20px 0;
+  background-size: 1920px 1080px; /* Tamaño fijo grande */
+  background-attachment: fixed; /* Mantiene el fondo fijo */
+  background-repeat: no-repeat; /* Evita que se repita */
   justify-content: space-between;
   border-bottom: 1px solid #e0e0e0;
+  min-height: 400px; /* Altura mínima */
+  width: 100%; /* Ancho completo */
 }
 
 .navbar__logo {
@@ -24,9 +22,9 @@ body {
   height: 300px;
   padding-left: 20px;
   position: relative;
-  position: relative;
-  filter: drop-shadow(0 10px 20px rgb(255, 255, 255))
-  drop-shadow(0 5px 20px rgb(255, 255, 255));
+  filter: 
+   drop-shadow(0 10px 20px rgb(255, 255, 255))
+   drop-shadow(0 5px 20px rgb(255, 255, 255));
 }
 
 .navbar__links {
@@ -59,7 +57,6 @@ body {
   color: #ffffff;
   background-color: #400707;
   border-radius: 50px;
-  padding: 5px 10px;
   transform: scale(0.9);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -68,8 +65,8 @@ body {
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 10px;
-    background-size: cover; /* Asegura que el fondo cubra todo */
-    height: auto; /* Altura automática */
+    height: auto;
+    /* Eliminamos background-size: cover para mantener el tamaño fijo */
   }
 
   .navbar__links {
@@ -109,7 +106,6 @@ body {
 
 .footer__1 a:hover {
   color: #400707;
-  display: inline-block;
   text-decoration: underline;
   transform: scale(0.9);
 }
